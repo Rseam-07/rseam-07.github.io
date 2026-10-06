@@ -1,0 +1,4 @@
+d8bc53d0e4f9f7b6bc6ed04d2bca7cf4fa0eda77e87ec86d05f87adaba069c07  Newbili-MD-1.1.1-20-arm64-v8a.apk
+79e5deaacef1fbef6d79e8c3b03bf0e076c700aca313c9e357656b6328d191c1  Newbili-MD-1.1.1-20-armeabi-v7a.apk
+638a8949e558cb082cb2c270b1febc9c66ddc385a347afaa2027249732ff90c3  Newbili-MD-1.1.1-20-x86_64.apk
+6b1ccf6751e8365fc0a9a4b2587e86ee0053687ff330ff47b2edd32531a30312  Newbili-MD-1.1.1-20-iOS-unsigned.ipa
