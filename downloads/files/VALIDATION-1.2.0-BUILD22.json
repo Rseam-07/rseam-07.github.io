@@ -1,0 +1,86 @@
+{
+  "release": "v1.2.0-build.22",
+  "date": "2026-10-08",
+  "sourceCommit": "ee44067c3acf5dcd6032d4660c90e59dce8e55c0",
+  "unifiedVersion": "1.2.0+22",
+  "checks": {
+    "focusedPassed": 10,
+    "fullSuiteRepeated": false,
+    "analysisErrors": 0,
+    "analysisWarnings": 0,
+    "reuse": "5 geometry cases and 2 existing tablet interaction cases retained; only failed or changed foldable cases rerun",
+    "coverage": [
+      "scene host: expanded → zero bounds → compact preserves navigation",
+      "cover → inner → book → tabletop → fullscreen → narrow Split View → manual tabletop retains player State, selected comment pane, scroll offset and interactive state",
+      "edge navigation: safe insets, 1.8x type and leading/trailing position",
+      "lazy hinge grid, RTL, final row and stale same-aspect geometry"
+    ]
+  },
+  "android": {
+    "package": "com.rseam07.newbili",
+    "minSdk": 31,
+    "targetSdk": 37,
+    "buildSuccess": true,
+    "signerSha256": "4876a7a04d24c8a89e82ca355a8f3fc404019d076af5aae2f5faaac32b5d6cdb",
+    "verifiedBy": "apksigner v2 and zipalign; all three ABI identities verified",
+    "emulator": "Android 12 ARM64; Build 21 → 22 upgraded in place; UID 10105 preserved; app startup and compact-to-wide comment pane verified; no crash-buffer entries; online video frames and danmaku rendered; manual tabletop lower transport reviewed"
+  },
+  "ios": {
+    "package": "com.rseam07.newbili.md",
+    "minimumOS": "15.0",
+    "deviceFamily": [
+      1,
+      2
+    ],
+    "phoneOrientations": 4,
+    "buildSuccess": true,
+    "requiresUserSigning": true,
+    "unsignedIPAIntegrity": "passed",
+    "simulatorBuild": "passed; embedded frameworks deep signature verified",
+    "startup": "iPhone 17 Pro and iPad Pro 11-inch M5 on iOS 26.5 runtime; compiled MDAdaptiveViewController storyboard confirmed; app UI rendered",
+    "sdk": "27.0",
+    "nativeDuoApiEnabled": false,
+    "nativeDuoApiRequiredSDK": "27.1"
+  },
+  "assets": [
+    {
+      "abi": "arm64-v8a",
+      "name": "Newbili-MD-1.2.0-22-arm64-v8a.apk",
+      "bytes": 25593068,
+      "sha256": "bdf46ea6c046c0cb0d45389951a727b54674941057f3b2b0fdfad44960deb6f3",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-22-arm64-v8a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.22/Newbili-MD-1.2.0-22-arm64-v8a.apk"
+    },
+    {
+      "abi": "armeabi-v7a",
+      "name": "Newbili-MD-1.2.0-22-armeabi-v7a.apk",
+      "bytes": 25502970,
+      "sha256": "f4d03df3f9e5e1f4c5d3fd29f5f65cf2b2ce4f59b323cc1852074a86fe7aa89c",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-22-armeabi-v7a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.22/Newbili-MD-1.2.0-22-armeabi-v7a.apk"
+    },
+    {
+      "abi": "x86_64",
+      "name": "Newbili-MD-1.2.0-22-x86_64.apk",
+      "bytes": 26514647,
+      "sha256": "c69b3310252d3eff2bd7bbc3ae00421fe4c232631f614440ce3c19e3886315b1",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-22-x86_64.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.22/Newbili-MD-1.2.0-22-x86_64.apk"
+    },
+    {
+      "name": "Newbili-MD-1.2.0-22-iOS-unsigned.ipa",
+      "bytes": 24394591,
+      "sha256": "a8b1edc1657dc8b732d0f04f943cab4981b6568dfe9cdbf613a167d9ada062ea",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-22-iOS-unsigned.ipa",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.22/Newbili-MD-1.2.0-22-iOS-unsigned.ipa",
+      "requiresSigning": true,
+      "minIOS": "15.0"
+    }
+  ],
+  "limits": [
+    "Automatic iOS Duo reserved regions, hinge interaction and vertical bar edge are guarded source only; not compiled or enabled in this SDK 27.0 IPA.",
+    "Actual Duo display/hinge/camera hardware, 120Hz frame times and power consumption not validated.",
+    "Player/scroll continuity asserted with widget state and Android emulator rendering; no physical-device playback acceptance claimed.",
+    "System Split View with other apps supported; multiple independent Newbili engines and camera accessory scenes not enabled."
+  ]
+}
