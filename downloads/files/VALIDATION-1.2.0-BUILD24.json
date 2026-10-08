@@ -1,0 +1,109 @@
+{
+  "release": "v1.2.0-build.24",
+  "date": "2026-10-08",
+  "sourceCommit": "56d380c58cc7fc6ede340d9ecc921badca3e0d42",
+  "unifiedVersion": "1.2.0+24",
+  "checks": {
+    "focusedPassed": 11,
+    "fullSuiteRepeated": false,
+    "analysisErrors": 0,
+    "analysisWarnings": 0,
+    "reuse": "11 passed Build 23 shared cases reused; Flutter app source unchanged. No full suite repeated.",
+    "coverage": [
+      "scene host: expanded → zero bounds → compact preserves navigation",
+      "cover → inner → book → tabletop → fullscreen → narrow Split View → manual tabletop retains player State, selected comment pane, scroll offset and interactive state",
+      "edge navigation: safe insets, 1.8x type and leading/trailing position",
+      "lazy hinge grid, RTL, final row and stale same-aspect geometry",
+      "short lower pane: comment content remains hit-testable; header send action invokes callback; no extra footer consuming height"
+    ],
+    "focusedRunThisRelease": 0,
+    "nativeSDKPublicAPIProbe": "passed",
+    "oldSDKStrictBuildRefusal": "passed with installed SDK 27.0",
+    "oldIPAReleaseRefusal": "passed with actual Build 23 IPA",
+    "binaryDuoLinks": "UIHingeInteraction, reservedRegions and verticalBarEdge verified in packaged IPA"
+  },
+  "android": {
+    "package": "com.rseam07.newbili",
+    "minSdk": 31,
+    "targetSdk": 37,
+    "buildSuccess": true,
+    "signerSha256": "4876a7a04d24c8a89e82ca355a8f3fc404019d076af5aae2f5faaac32b5d6cdb",
+    "verifiedBy": "apksigner v2 and zipalign; all three ABI identities verified",
+    "emulator": "Shared Android app code unchanged from Build 23; prior upgrade, UID and startup checks reused. Build 24 all three ABI versions/signatures/zipalign independently verified."
+  },
+  "ios": {
+    "package": "com.rseam07.newbili.md",
+    "minimumOS": "15.0",
+    "deviceFamily": [
+      1,
+      2
+    ],
+    "phoneOrientations": 4,
+    "buildSuccess": true,
+    "requiresUserSigning": true,
+    "unsignedIPAIntegrity": "passed",
+    "simulatorBuild": "passed; embedded frameworks deep signature verified",
+    "startup": "Build 24 compiled against SDK 27.1, installed and launched on iPhone 17 Pro / iOS 26.5 simulator. Actual feed UI inspected; app process running. Older-OS weak-link fallback startup verified.",
+    "sdk": "27.1",
+    "nativeDuoApiEnabled": true,
+    "nativeDuoApiRequiredSDK": "27.1",
+    "xcode": "27.1 RC",
+    "xcodeBuild": "27A9275",
+    "duoPoseValidation": "pending: iOS 27.1 arm64 runtime 24A94232 downloading; iPhone Duo device type registered",
+    "physicalDuoValidation": "pending"
+  },
+  "assets": [
+    {
+      "abi": "arm64-v8a",
+      "name": "Newbili-MD-1.2.0-24-arm64-v8a.apk",
+      "bytes": 25593068,
+      "sha256": "15ec8201423269b99c33579cc4be9532a8190b967ceb49a71d78992a12fbb965",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-24-arm64-v8a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.24/Newbili-MD-1.2.0-24-arm64-v8a.apk"
+    },
+    {
+      "abi": "armeabi-v7a",
+      "name": "Newbili-MD-1.2.0-24-armeabi-v7a.apk",
+      "bytes": 25502970,
+      "sha256": "b74402e16bc741a87937cb36e3f9837f7910b826857894f03f81bb1c1eeb51f0",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-24-armeabi-v7a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.24/Newbili-MD-1.2.0-24-armeabi-v7a.apk"
+    },
+    {
+      "abi": "x86_64",
+      "name": "Newbili-MD-1.2.0-24-x86_64.apk",
+      "bytes": 26514647,
+      "sha256": "e44e75a9c8d01f4274e3b44859e9757a1f4b39930b7ec363db6fb0bd83f7f5ce",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-24-x86_64.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.24/Newbili-MD-1.2.0-24-x86_64.apk"
+    },
+    {
+      "name": "Newbili-MD-1.2.0-24-iOS-unsigned.ipa",
+      "bytes": 24398180,
+      "sha256": "ff8750053f044e436fd95cc73d9932fdd726714c569cf7ec3cb1ef912f9b138a",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-24-iOS-unsigned.ipa",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.24/Newbili-MD-1.2.0-24-iOS-unsigned.ipa",
+      "requiresSigning": true,
+      "minIOS": "15.0",
+      "sdk": "iphoneos27.1",
+      "nativeDuoApiEnabled": true
+    }
+  ],
+  "limits": [
+    "Duo native bridge is compiled and linked; actual Duo poses/display transitions still require the 27.1 runtime and physical device validation.",
+    "Unsigned IPA requires user signing.",
+    "Shared logic checks reused; no repeated full test suite."
+  ],
+  "sdkInstallation": {
+    "source": "https://developer.apple.com/services-account/download?path=/Developer_Tools/Xcode_27.1_Release_Candidate/Xcode_27.1_Release_Candidate.xip",
+    "archiveBytes": 2027369056,
+    "archiveSha256": "038ad29cc2cd87e7762aac596833943000fd3d5fb64be530e2ecdbe5449cd660",
+    "xcode": "27.1 RC",
+    "build": "27A9275",
+    "iphoneosSDK": "27.1",
+    "archiveSignature": "signed Apple Software",
+    "applicationDeepSignature": "passed",
+    "duoPublicAPICompileProbe": "passed",
+    "simulatorRuntime": "downloading iOS 27.1 arm64 24A94232"
+  }
+}
