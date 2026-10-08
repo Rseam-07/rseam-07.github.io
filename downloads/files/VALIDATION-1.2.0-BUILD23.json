@@ -1,0 +1,87 @@
+{
+  "release": "v1.2.0-build.23",
+  "date": "2026-10-08",
+  "sourceCommit": "77a6d5ca9826d65cf722f16a19e616d0d5afee7a",
+  "unifiedVersion": "1.2.0+23",
+  "checks": {
+    "focusedPassed": 11,
+    "fullSuiteRepeated": false,
+    "analysisErrors": 0,
+    "analysisWarnings": 0,
+    "reuse": "10 passed foldable/geometry/tablet cases reused; one new short tabletop interaction case and changed file analysis passed for Build 23",
+    "coverage": [
+      "scene host: expanded → zero bounds → compact preserves navigation",
+      "cover → inner → book → tabletop → fullscreen → narrow Split View → manual tabletop retains player State, selected comment pane, scroll offset and interactive state",
+      "edge navigation: safe insets, 1.8x type and leading/trailing position",
+      "lazy hinge grid, RTL, final row and stale same-aspect geometry",
+      "short lower pane: comment content remains hit-testable; header send action invokes callback; no extra footer consuming height"
+    ]
+  },
+  "android": {
+    "package": "com.rseam07.newbili",
+    "minSdk": 31,
+    "targetSdk": 37,
+    "buildSuccess": true,
+    "signerSha256": "4876a7a04d24c8a89e82ca355a8f3fc404019d076af5aae2f5faaac32b5d6cdb",
+    "verifiedBy": "apksigner v2 and zipalign; all three ABI identities verified",
+    "emulator": "Android 12 ARM64; Build 21 → 22 → 23 upgraded in place; UID 10105 preserved; final Build 23 launch verified. Build 22 online video/danmaku, compact-to-wide comment pane and manual tabletop inspected; Build 23 fixes the detected short-card action layout."
+  },
+  "ios": {
+    "package": "com.rseam07.newbili.md",
+    "minimumOS": "15.0",
+    "deviceFamily": [
+      1,
+      2
+    ],
+    "phoneOrientations": 4,
+    "buildSuccess": true,
+    "requiresUserSigning": true,
+    "unsignedIPAIntegrity": "passed",
+    "simulatorBuild": "passed; embedded frameworks deep signature verified",
+    "startup": "Native host unchanged from Build 22: iPhone 17 Pro and iPad Pro 11-inch M5 on iOS 26.5 runtime; compiled MDAdaptiveViewController storyboard and app UI verified. Build 23 release compiled and IPA independently verified; no repeated simulator build.",
+    "sdk": "27.0",
+    "nativeDuoApiEnabled": false,
+    "nativeDuoApiRequiredSDK": "27.1"
+  },
+  "assets": [
+    {
+      "abi": "arm64-v8a",
+      "name": "Newbili-MD-1.2.0-23-arm64-v8a.apk",
+      "bytes": 25593068,
+      "sha256": "7b1ff04ce167f600f5d76c5854d361b61fbc995fd02a05805b40b45c2157d735",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-23-arm64-v8a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.23/Newbili-MD-1.2.0-23-arm64-v8a.apk"
+    },
+    {
+      "abi": "armeabi-v7a",
+      "name": "Newbili-MD-1.2.0-23-armeabi-v7a.apk",
+      "bytes": 25502970,
+      "sha256": "33ad65b133daa7ebf6f58de813b39b4a4f8614bb8591c993793aaad232263432",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-23-armeabi-v7a.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.23/Newbili-MD-1.2.0-23-armeabi-v7a.apk"
+    },
+    {
+      "abi": "x86_64",
+      "name": "Newbili-MD-1.2.0-23-x86_64.apk",
+      "bytes": 26514647,
+      "sha256": "4e6004d053b9aa041f470662874a8be377f17577a7b237cafd2768656d07d47a",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-23-x86_64.apk",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.23/Newbili-MD-1.2.0-23-x86_64.apk"
+    },
+    {
+      "name": "Newbili-MD-1.2.0-23-iOS-unsigned.ipa",
+      "bytes": 24395548,
+      "sha256": "fb72a3e9bce1d55443db6fd962a80076684c1fd92adda39e44404d8bb7cde698",
+      "url": "https://rseam-07.github.io/downloads/files/Newbili-MD-1.2.0-23-iOS-unsigned.ipa",
+      "githubUrl": "https://github.com/Rseam-07/Newbili-MD/releases/download/v1.2.0-build.23/Newbili-MD-1.2.0-23-iOS-unsigned.ipa",
+      "requiresSigning": true,
+      "minIOS": "15.0"
+    }
+  ],
+  "limits": [
+    "Automatic iOS Duo reserved regions, hinge interaction and vertical bar edge are guarded source only; not compiled or enabled in this SDK 27.0 IPA.",
+    "Actual Duo display/hinge/camera hardware, 120Hz frame times and power consumption not validated.",
+    "Player/scroll continuity asserted with widget state and Android emulator rendering; no physical-device playback acceptance claimed.",
+    "System Split View with other apps supported; multiple independent Newbili engines and camera accessory scenes not enabled."
+  ]
+}
